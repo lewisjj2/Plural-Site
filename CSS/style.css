@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+    background: #181818;
+    color: white;
+}
+#sign-in .primary-btn {
+    width: 100%;
+}
+.primary-btn {
+    padding: .7rem 1rem;
+    height: 2.6rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #f96816;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all .5s;
+}
+
+.primary-btn:hover {
+    background: #ff7b39;
+}
+
+.secondary-btn {
+    padding: .7rem 1rem;
+    height: 2.6rem;
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+    font-weight: 500;
+    background: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all .5s;
+}
+
+.secondary-btn:hover {
+    border-color:  #ff7b39;
+    color: #ff7b39;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+
+#sign-in form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+#sign-in .logo {
+    margin-bottom: 8vh;
+}
+
+#sign-in .logo img {
+    width: 300px;
+}
+
+#sign-in label {
+    font-size: .8rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#sign-in .text-input {
+    margin-bottom: 1.2rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: .5rem 1rem;
+    line-height: 1.2rem
+}
+
+
+    
+#sign-in .links a {
+    color: white;
+    text-decoration: none;
+    margin-top: .8rem;
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#sign-in .or {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.2rem;
+    align-items: center;
+}
+
+#sign-in .or .bar {
+    border: 0;
+    flex: auto;
+    height: 1px;
+    background: white;
+}
+#sign-in .secondary-btn {
+    margin-top: 1rem;
+}
+#sign-in .or span {
+    color: white;
+    padding: 0 .8rem;
+}
+
+#showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+#showcase .showcase-text {
+    font-size: 3rem;
+    width: 100%;
+    color: white;
+    margin-bottom: 1.2rem;
+}
+#showcase .secondary-btn {
+    margin: auto;
+    width: 60%;
+}
+
+#main-footer {
+    color: #ccc;
+    text-align: center;
+    font-size: .8rem;
+    max-width: 80%;
+    padding-top: 2rem;
+}
+
+#main-footer a {
+    color: #f96816;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 1200px) {
+    #left {
+        flex: 4
+    }
+    #right {
+        flex: 6;
+    }
+}
+
+@media (max-width: 768px) {
+    #right {
+        display: none;
+    }
+    body {
+        overflow: auto;
+    }
+    #left {
+        justify-content: start;
+        margin-top: 6vh;
+    }
+    #sign-in .logo {
+        margin-bottom: 2vh;
+    }
+    #sign-in .text-input {
+        margin-bottom: 0.7rem;
+    }
+    #main-footer {
+        padding-top: 1rem;
+    }
+}
+
+
